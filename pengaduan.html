@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pengaduan - Rutan Sinjai</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        #menu-pengaduan, #menu-pengaduan i {
+            color: #ddb309 !important;
+        }
+
+        .content-pengaduan {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+            min-height: 80vh;
+        }
+
+        .form-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            font-size: 28px;
+            color: #0b2d57;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #222222e7
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 15px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus {
+            border-color: #a8acd49d;
+            outline: none;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background-color: #093b77;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background-color: #0b2d57;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="container topbar-flex">
+        <div class="topbar-social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="topbar-info">
+            <span><i class="fa-solid fa-phone"></i> 0724-7333024</span>
+            <span><i class="fa-brands fa-whatsapp"></i> +628714409435</span>
+            <span><i class="fa-solid fa-envelope"></i> rutan.sinjai@kemenkumham.go.id</span>
+            <span><i class="fa-solid fa-clock"></i> Senin – Sabtu | 08.00 s.d 16.00</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <span>Rutan Sinjai<br><small>Kelas IIB</small></span>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user nav-icon"></i> Profil <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-image nav-icon"></i> Media <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+            <li><a href="layanan.html"><i class="fa-solid fa-receipt nav-icon"></i> Layanan</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-question nav-icon"></i> Pusat Bantuan <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+            <li><a href="pengaduan.html" id="menu-pengaduan"><i class="fa-solid fa-bullhorn nav-icon"></i> Pengaduan</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="content-pengaduan">
+    <div class="container">
+        <div class="form-container">
+            <h2>Form Pengaduan</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="ktp">Nomor KTP:</label>
+                    <input type="text" id="ktp" name="ktp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <input type="text" id="alamat" name="alamat" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pengaduan">Pengaduan:</label>
+                    <textarea id="pengaduan" name="pengaduan" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="logo"> 
+                </div>
+                <div class="footer-info">
+                    <p>Kementerian Imigrasi Dan</p>
+                    <p>Pemasyarakatan Kanwil</p>
+                    <p>Direktorat Jenderal</p>
+                    <p>Pemasyarakatan Sulsel</p>
+                    <p>Rumah Tahanan Negara Kelas</p>
+                    <p>IIB Sinjai</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Instansi Terkait</h4>
+                <ul>
+                    <li><a href="#">Ditjen Pemasyarakatan</a></li>
+                    <li><a href="#">Kepolisian RI</a></li>
+                    <li><a href="#">Kejaksaan RI</a></li>
+                    <li><a href="#">Mahkamah Agung RI</a></li>
+                    <li><a href="#">Peradi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Profil Unit Pelaksana Teknis</h4>
+                <ul>
+                    <li><a href="#">Sejarah Pemasyarakatan</a></li>
+                    <li><a href="#">Selayang Pandang Satuan Kerja</a></li>
+                    <li><a href="#">Kedudukan Tugas dan Fungsi</a></li>
+                    <li><a href="#">Visi Misi dan Tata Nilai</a></li>
+                    <li><a href="#">Mars Pemasyarakatan</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="footer-map-container">
+                    <iframe 
+                        id="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15911.751662580468!2d120.2452!3d-5.1234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMDcnMjQuMiJTIDEyMMKwMTQnNDIuNyJF!5e0!3m2!1sid!2sid!4v1700000000000" 
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
