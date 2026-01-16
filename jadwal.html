@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kunjungan - Rutan Sinjai</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #093b77;
+            --accent-yellow: #ddb309;
+            --bg-light: #ffffff;
+            --text-gray: #64748b;
+            --green-layanan: #10b981;
+        }
+
+        #menu-layanan-aktif, #menu-layanan-aktif i {
+            color: var(--accent-yellow) !important;
+        }
+
+        .content-layanan {
+            padding: 60px 20px;
+            background-color: var(--bg-light);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 70vh;
+        }
+
+        .container-minimalist {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-blue);
+            font-size: 28px; 
+            font-weight: 700; 
+            margin-bottom: 10px;
+        }
+
+        .section-title .underline {
+            width: 50px; 
+            height: 4px; 
+            background: var(--accent-yellow);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .jadwal-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card-jadwal {
+            background: #ffffff;
+            padding: 22px 25px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f1f5f9;
+        }
+
+        .k-icon-wrapper {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            background: #f1f5f9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+        }
+
+        .napi-color { color: var(--accent-yellow); }
+        .tahanan-color { color: var(--primary-blue); }
+        .waktu-color { color: var(--green-layanan); }
+
+        .k-info span {
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .k-info h4 {
+            margin: 0;
+            font-size: 18px;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 35px;
+            color: var(--text-gray);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .jadwal-grid { grid-template-columns: 1fr; }
+            .section-title h2 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="container topbar-flex">
+            <div class="topbar-social">
+                <a href="https://www.instagram.com/rutansinjai?igsh=MWI4eW54N2h1ZzdpZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@rutansinjai?_r=1&_t=ZS-933TyfuH2mG"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        <div class="topbar-info">
+            <span><i class="fa-solid fa-phone"></i> 0724-7333024</span>
+            <span><i class="fa-brands fa-whatsapp"></i> +628714409435</span>
+            <span><i class="fa-solid fa-envelope"></i> rutan.sinjai@kemenkumham.go.id</span>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+            <span>Rutan Sinjai<br><small>Kelas IIB</small></span>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-user nav-icon"></i> Profil <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-image nav-icon"></i> Media <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+            <li class="dropdown">
+                <a href="#" id="menu-aktif"><i class="fa-solid fa-receipt nav-icon"></i> Layanan <i class="fa-solid fa-chevron-down chevron"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="layanan.html"><i class="fa-solid fa-circle-info"></i> Informasi Layanan</a></li>
+                    <li><a href="#"><i class="fa-solid fa-file-invoice"></i> Administrasi</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Pusat Terpadu (PTSP)</a></li>
+                </ul>
+            </li>
+            <li><a href="pengaduan.html" id="menu-pengaduan"><i class="fa-solid fa-bullhorn nav-icon"></i> Pengaduan</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <section class="content-layanan">
+        <div class="container-minimalist">
+            
+            <div class="section-title">
+                <h2>Jadwal Kunjungan</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="jadwal-grid">
+                
+                <div class="card-jadwal">
+                    <div class="k-icon-wrapper napi-color"><i class="fa-solid fa-users"></i></div>
+                    <div class="k-info">
+                        <span>KATEGORI NARAPIDANA</span>
+                        <h4>Senin & Rabu</h4>
+                    </div>
+                </div>
+
+                <div class="card-jadwal">
+                    <div class="k-icon-wrapper tahanan-color"><i class="fa-solid fa-user-shield"></i></div>
+                    <div class="k-info">
+                        <span>KATEGORI TAHANAN</span>
+                        <h4>Kamis & Jumat</h4>
+                    </div>
+                </div>
+
+                <div class="card-jadwal">
+                    <div class="k-icon-wrapper waktu-color"><i class="fa-solid fa-sun"></i></div>
+                    <div class="k-info">
+                        <span>LAYANAN PAGI</span>
+                        <h4>09.15 – 11.15 WITA</h4>
+                    </div>
+                </div>
+
+                <div class="card-jadwal">
+                    <div class="k-icon-wrapper waktu-color"><i class="fa-solid fa-cloud-sun"></i></div>
+                    <div class="k-info">
+                        <span>LAYANAN SIANG</span>
+                        <h4>13.15 – 14.15 WITA</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-note">
+                <p><i class="fa-solid fa-circle-info"></i> Hari Minggu & Libur Nasional Layanan Ditiadakan</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="logo"> 
+                    </div>
+                    <div class="footer-info">
+                        <p>Kementerian Imigrasi Dan</p>
+                        <p>Pemasyarakatan Kanwil</p>
+                        <p>Direktorat Jenderal</p>
+                        <p>Pemasyarakatan Sulsel</p>
+                        <p>Rumah Tahanan Negara Kelas</p>
+                        <p>IIB Sinjai</p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Instansi Terkait</h4>
+                    <ul>
+                        <li><a href="#">Ditjen Pemasyarakatan</a></li>
+                        <li><a href="#">Kepolisian RI</a></li>
+                        <li><a href="#">Kejaksaan RI</a></li>
+                        <li><a href="#">Mahkamah Agung RI</a></li>
+                        <li><a href="#">Peradi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Profil Unit Pelaksana Teknis</h4>
+                    <ul>
+                        <li><a href="#">Sejarah Pemasyarakatan</a></li>
+                        <li><a href="#">Selayang Pandang Satuan Kerja</a></li>
+                        <li><a href="#">Kedudukan Tugas dan Fungsi</a></li>
+                        <li><a href="#">Visi Misi dan Tata Nilai</a></li>
+                        <li><a href="#">Mars Pemasyarakatan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-map-container">
+                        <iframe 
+                            id="google-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1158525046294!2d120.2525164!3d-5.1172828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe25d7be14bb21%3A0x1df1482e91046273!2sRumah%20Tahanan%20Negara%20Kelas%20IIB%20Sinjai!5e0!3m2!1sid!2sid!4v1705220000000!5m2!1sid!2sid" 
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
