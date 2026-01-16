@@ -117,3 +117,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     runCounter();
 });
+
+const menuToggle = document.querySelector('#mobile-menu');
+const navMenu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (navMenu.classList.contains('active')) {
+        icon.classList.replace('fa-bars', 'fa-xmark');
+    } else {
+        icon.classList.replace('fa-xmark', 'fa-bars');
+    }
+});
+
+document.querySelectorAll('.menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
+});
