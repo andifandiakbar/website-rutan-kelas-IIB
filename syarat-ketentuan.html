@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketentuan Kunjungan - Rutan Sinjai</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-blue: #093b77;
+            --accent-yellow: #ddb309;
+            --bg-light: #ffffff;
+            --text-gray: #64748b;
+        }
+
+        #menu-layanan-aktif, #menu-layanan-aktif i {
+            color: #ddb309 !important;
+        }
+
+        .content-layanan {
+            padding: 60px 20px;
+            background-color: var(--bg-light);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 70vh;
+        }
+
+        .container-minimalist {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: var(--primary-blue);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .section-title .underline {
+            width: 50px;
+            height: 4px;
+            background: var(--accent-yellow);
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+
+        .ketentuan-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .k-card {
+            background: #ffffff;
+            padding: 22px 25px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f1f5f9;
+        }
+
+        .k-icon-wrapper {
+            width: 55px;
+            height: 55px;
+            min-width: 55px;
+            background: #f1f5f9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: var(--primary-blue);
+        }
+
+        .k-info h4 {
+            margin: 0 0 4px 0;
+            font-size: 17px;
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+
+        .k-info p {
+            margin: 0;
+            color: var(--text-gray);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .k-card { padding: 18px; gap: 15px; }
+            .k-icon-wrapper { width: 45px; height: 45px; min-width: 45px; font-size: 18px; }
+            .k-info h4 { font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topbar">
+        <div class="container topbar-flex">
+            <div class="topbar-social">
+                <a href="https://www.instagram.com/rutansinjai?igsh=MWI4eW54N2h1ZzdpZA=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@rutansinjai?_r=1&_t=ZS-933TyfuH2mG"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+            <div class="topbar-info">
+                <span><i class="fa-solid fa-phone"></i> 0724-7333024</span>
+                <span><i class="fa-brands fa-whatsapp"></i> +628714409435</span>
+                <span><i class="fa-solid fa-envelope"></i> rutan.sinjai@kemenkumham.go.id</span>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <span>Rutan Sinjai<br><small>Kelas IIB</small></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user nav-icon"></i> Profil <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image nav-icon"></i> Media <i class="fa-solid fa-chevron-down chevron"></i></a></li>
+                <li class="dropdown">
+                    <a href="#" id="menu-aktif"><i class="fa-solid fa-receipt nav-icon"></i> Layanan <i class="fa-solid fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="layanan.html"><i class="fa-solid fa-circle-info"></i> Informasi Layanan</a></li>
+                        <li><a href="#"><i class="fa-solid fa-file-invoice"></i> Administrasi</a></li>
+                        <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Pusat Terpadu (PTSP)</a></li>
+                    </ul>
+                </li>
+                <li><a href="pengaduan.html" id="menu-pengaduan"><i class="fa-solid fa-bullhorn nav-icon"></i> Pengaduan</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-layanan">
+        <div class="container-minimalist">
+            
+            <div class="section-title">
+                <h2>Ketentuan Kunjungan</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="ketentuan-stack">
+                
+                <div class="k-card">
+                    <div class="k-icon-wrapper"><i class="fa-solid fa-id-card"></i></div>
+                    <div class="k-info">
+                        <h4>Identitas Resmi</h4>
+                        <p>Wajib Membawa Identitas Resmi (KTP, KK, SIM & KARTU PELAJAR)</p>
+                    </div>
+                </div>
+
+                <div class="k-card">
+                    <div class="k-icon-wrapper"><i class="fa-solid fa-file-signature"></i></div>
+                    <div class="k-info">
+                        <h4>Izin Pihak Penahan</h4>
+                        <p>Wajib Membawa Surat Izin Dari Pihak Penahan (Bagi Tahanan)</p>
+                    </div>
+                </div>
+
+                <div class="k-card">
+                    <div class="k-icon-wrapper"><i class="fa-solid fa-shirt"></i></div>
+                    <div class="k-info">
+                        <h4>Etika Berpakaian</h4>
+                        <p>Dilarang Menggunakan celana Pendek</p>
+                    </div>
+                </div>
+
+                <div class="k-card">
+                    <div class="k-icon-wrapper"><i class="fa-solid fa-calendar-xmark"></i></div>
+                    <div class="k-info">
+                        <h4>Hari Libur</h4>
+                        <p>Hari Minggu dan Libur Nasional Kunjungan Ditiadakan</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="logo"> 
+                    </div>
+                    <div class="footer-info">
+                        <p>Kementerian Imigrasi Dan</p>
+                        <p>Pemasyarakatan Kanwil</p>
+                        <p>Direktorat Jenderal</p>
+                        <p>Pemasyarakatan Sulsel</p>
+                        <p>Rumah Tahanan Negara Kelas</p>
+                        <p>IIB Sinjai</p>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Instansi Terkait</h4>
+                    <ul>
+                        <li><a href="#">Ditjen Pemasyarakatan</a></li>
+                        <li><a href="#">Kepolisian RI</a></li>
+                        <li><a href="#">Kejaksaan RI</a></li>
+                        <li><a href="#">Mahkamah Agung RI</a></li>
+                        <li><a href="#">Peradi</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Profil Unit Pelaksana Teknis</h4>
+                    <ul>
+                        <li><a href="#">Sejarah Pemasyarakatan</a></li>
+                        <li><a href="#">Selayang Pandang Satuan Kerja</a></li>
+                        <li><a href="#">Kedudukan Tugas dan Fungsi</a></li>
+                        <li><a href="#">Visi Misi dan Tata Nilai</a></li>
+                        <li><a href="#">Mars Pemasyarakatan</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <div class="footer-map-container">
+                        <iframe 
+                            id="google-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1158525046294!2d120.2525164!3d-5.1172828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbe25d7be14bb21%3A0x1df1482e91046273!2sRumah%20Tahanan%20Negara%20Kelas%20IIB%20Sinjai!5e0!3m2!1sid!2sid!4v1705220000000!5m2!1sid!2sid" 
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
